@@ -1,0 +1,137 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Flexbox Layout */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(120deg, #d4fc79, #96e6a1, #76e7cd); /* Fresh greenish background */
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Body Animation */
+.fade-in {
+  animation: fadeIn 2s ease-out;
+}
+
+/* Header */
+header {
+  background: linear-gradient(120deg, #00b09b, #96c93d); /* Nice green gradient */
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  border-bottom: 5px solid #4caf50;
+  animation: slideIn 1.5s ease-out;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Section */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Contact Details Card */
+.contact-details {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contact-details h2 {
+  color: #4caf50;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-details p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.contact-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-details li {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.contact-details a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-details a:hover {
+  color: #388e3c;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+/* Footer */
+footer {
+  background: #e8f5e9;
+  color: #555;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Keyframes Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+  
+  .contact-details {
+    padding: 2rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .contact-details h2 {
+    font-size: 1.7rem;
+  }
+}

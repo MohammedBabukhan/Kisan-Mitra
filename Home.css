@@ -1,0 +1,194 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to right, #56ab2f, #a8e063);/* 🍃 Harvest gradient */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: calibri;
+}
+.logo{
+    color: yellow;
+}
+nav{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    background-color: darkgreen;
+}
+nav .logo p{
+    font-size: 30px;
+    font-weight: bold;
+    float:left;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 0px;
+}
+nav ul{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+nav li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    color: yellow;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: yellowgreen;
+    transition: all 0.4s case 0s;
+}
+.container{
+    height: 750px;
+    width: 100%;
+    background: transparent;
+}
+.imgdiv{
+    height: 500px;
+    width: 900px;
+   
+}
+.imgup{  
+    width: 900px;
+    height: 100px;
+    padding-top: 20px;
+    padding-left: 100px;
+}
+.imgmiddle{
+    padding-top: 70px;
+    width: 900px;
+    height: 140px;
+   padding-left: 100px;
+    
+}
+.imgdown{
+    padding-left: 100px;
+    padding-top: 70px;
+    width: 900px;
+}
+.content{
+    padding-top: 200px;
+    color: white;
+    font-size: 20px;
+}
+.text{
+   padding-top: 100px;
+   padding-left: 100px;
+   
+}
+.para{
+    padding-left: 100px;
+}
+.form{
+    width: 300px;
+    height: 470px;
+   background: linear-gradient(to left, #56ab2f, #a8e063);
+    position: absolute;
+    top: 150px;
+    left: 1150px;
+    border-radius: 10px;
+    padding: 30px;
+    color:  #ff6f00;
+    font-weight: bold;
+}
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: green;
+    font-size: 22px;
+    background-color: greenyellow;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 10px;
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 4px solid greenyellow;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: green;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: green;
+    font-family: Arial;
+    font-weight:bold;
+}
+.btn{
+    width: 240px;
+    height: 40px;
+    background: #fff;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ff6f00;
+    font-weight: bold;
+}
+.btn:hover{
+    background: green;
+    color: yellow;
+}
+.btn a{
+    text-decoration: navy;
+    color: black;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+   
+}
+.form .link a{
+    text-decoration: none;
+    color: #00cc00;
+    border-bottom: 1px solid #00cc00;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: green;
+}
